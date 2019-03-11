@@ -170,9 +170,7 @@ yarn start
 
 ## Features
 
-- Fetch images
-- Upload images
-- Delete images
+Convert currencies using daily Fixer's Forex rates.
 
 [Back to top](#table-of-contents)
 
