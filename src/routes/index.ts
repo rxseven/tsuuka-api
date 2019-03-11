@@ -1,7 +1,12 @@
 import { Response, Request, Router } from 'express';
 
+import currency from './currency';
+
 // Creates a new router object
 const router = Router();
+
+// Nested routes
+router.use('/currencies', currency);
 
 // Root route
 router.route('/').get(
