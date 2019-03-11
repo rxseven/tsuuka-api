@@ -1,4 +1,5 @@
 import exchangeService from '../services/exchange';
+import countryHelper from './country';
 
 interface Country {
   code: string;
@@ -29,4 +30,22 @@ async function getExchange(
   }
 }
 
-export default { getExchange };
+// Get compact countries by currency code
+async function getCountries(currencyCode: string): Promise<Country[] | never> {
+  try {
+    const data = await countryHelper.getCountries(currencyCode);
+
+    const countries = data.map(country => ({
+      code: country.alpha2Code,
+      name: country.name
+    }));
+
+    return countries;
+  } catch (error) {
+    throw new Error(
+      `Unable to get countries that use ${currencyCode.toUpperCase()}.`
+    );
+  }
+}
+
+export default { getCountries, getExchange };

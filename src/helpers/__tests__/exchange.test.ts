@@ -1,6 +1,6 @@
 import nock from 'nock';
 
-import { FIXER_API_URL } from '../../config/server';
+import { FIXER_API_URL, RESTCOUNTRIES_API_URL } from '../../config/server';
 import exchangeHelper from '../exchange';
 
 describe('Exchange helper', () => {
@@ -27,6 +27,42 @@ describe('Exchange helper', () => {
 
       // Act
       const data = await exchangeHelper.getExchange(request.from, request.to);
+
+      // Assert
+      expect(data).toEqual(result);
+    });
+  });
+
+  describe('getCountries()', () => {
+    it('should get compact countries by currency code', async () => {
+      // Arrange
+      const request = 'thb';
+      const response = [
+        {
+          alpha2Code: 'TH',
+          currencies: [
+            {
+              code: 'THB',
+              name: 'Thai Baht'
+            }
+          ],
+          name: 'Thailand'
+        }
+      ];
+      const result = [
+        {
+          code: 'TH',
+          name: 'Thailand'
+        }
+      ];
+
+      nock(RESTCOUNTRIES_API_URL)
+        .persist()
+        .get(`/currency/${request}`)
+        .reply(200, response);
+
+      // Act
+      const data = await exchangeHelper.getCountries(request);
 
       // Assert
       expect(data).toEqual(result);
