@@ -2,7 +2,7 @@
 
 [![Latest Release](https://img.shields.io/badge/latest-0.1.0-lightgrey.svg?style=flat 'Latest Release')](https://github.com/rxseven/tsuuka-api/releases/tag/v0.1.0) [![Build Status](https://travis-ci.org/rxseven/tsuuka-api.svg?branch=master 'Build Status')](https://travis-ci.org/rxseven/tsuuka-api) [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/ 'CC BY-NC-ND 4.0') [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0 'AGPL v3')
 
-**Tsūka API is a simple REST API for converting currencies.** It was built from scratch using Node, Express, and TypeScript.
+**Tsūka API is an extremely simple REST API for converting currencies.** It was built from scratch using Node, Express, and TypeScript.
 
 > Tsūka or 通貨 literally means “Currency” in Japanese and 通貨換算ツール (tsūka kansan tsūru) means “Currency Convertion Tool” or “Currency Converter”.
 
@@ -35,7 +35,7 @@
 
 > **App sleeping...** as Tsūka (React app) and its API (this repository) run on [Heroku’s free plan](https://www.heroku.com/free), when an app on Heroku has only one web dyno and that dyno doesn’t receive any traffic in 1 hour, the dyno goes to sleep. When someone accesses the app, the dyno manager will automatically wake up the web dyno to run the web process type. **This causes a short delay for this first request**, but subsequent requests will perform normally. For more information, see [App Sleeping on Heroku](https://blog.heroku.com/app_sleeping_on_heroku).
 
-> **Monthly limit** as [Tsūka API](https://github.com/rxseven/tsuuka-api) gets current and historical foreign exchange (Forex) rates from [Fixer’s free plan](https://fixer.io/product), at which point **Tsūka API is restricted to making 1,000 API calls per month**. For more information, see [Fixer Plans](https://fixer.io/product).
+> **Monthly limit** as [Tsūka API](https://github.com/rxseven/tsuuka-api) gets current and historical foreign exchange (Forex) rates from [Fixer’s free plan](https://fixer.io/product), therefore **Tsūka API is restricted to making 1,000 API calls per month**. For more information, see [Fixer Plans](https://fixer.io/product).
 
 [Back to top](#table-of-contents)
 
@@ -119,8 +119,6 @@ yarn test:watch
 yarn test:watch:silent
 yarn test:watch:verbose
 ```
-
-> Note: Tsūka API v0.1.0 has not implemented any unit tests yet.
 
 > Note: by default, when you run test in [watch mode](https://jestjs.io/docs/en/cli.html#watch), Jest will only run the tests related to files changed (modified) since the last commit. This is an optimization designed to make your tests run fast regardless of how many tests in the project you have. However, you can also press `a` in the watch mode to force Jest to run all tests.
 
@@ -244,7 +242,7 @@ Tsūka API is an open-source project built and maintained by [Theerawat Pongsupa
 
 ## Credits
 
-Tsūka API was bootstrapped with [TypeScript Node Starter](https://github.com/Microsoft/TypeScript-Node-Starter) - a starter template for TypeScript and Node.
+This project was bootstrapped with [Gyararī API](https://github.com/rxseven/gyararii-api).
 
 ## Licenses
 
