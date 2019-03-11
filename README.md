@@ -35,7 +35,7 @@
 
 > **App sleeping...** as Tsūka (React app) and its API (this repository) run on [Heroku’s free plan](https://www.heroku.com/free), when an app on Heroku has only one web dyno and that dyno doesn’t receive any traffic in 1 hour, the dyno goes to sleep. When someone accesses the app, the dyno manager will automatically wake up the web dyno to run the web process type. **This causes a short delay for this first request**, but subsequent requests will perform normally. For more information, see [App Sleeping on Heroku](https://blog.heroku.com/app_sleeping_on_heroku).
 
-> **Monthly limit** as [Tsūka API](https://github.com/rxseven/tsuuka-api) gets current and historical foreign exchange (Forex) rates from [Fixer’s free plan](https://fixer.io/product), at which point **Tsūka API is restricted to making 1,000 API calls per month**. For more information, see [Fixer Plans](https://fixer.io/product).
+> **Monthly limit** as [Tsūka API](https://github.com/rxseven/tsuuka-api) gets current and historical foreign exchange (Forex) rates from [Fixer’s free plan](https://fixer.io/product), therefore **Tsūka API is restricted to making 1,000 API calls per month**. For more information, see [Fixer Plans](https://fixer.io/product).
 
 [Back to top](#table-of-contents)
 
@@ -119,8 +119,6 @@ yarn test:watch
 yarn test:watch:silent
 yarn test:watch:verbose
 ```
-
-> Note: Tsūka API v0.1.0 has not implemented any unit tests yet.
 
 > Note: by default, when you run test in [watch mode](https://jestjs.io/docs/en/cli.html#watch), Jest will only run the tests related to files changed (modified) since the last commit. This is an optimization designed to make your tests run fast regardless of how many tests in the project you have. However, you can also press `a` in the watch mode to force Jest to run all tests.
 
