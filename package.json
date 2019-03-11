@@ -46,6 +46,7 @@
     "morgan": "1.9.1"
   },
   "devDependencies": {
+    "@types/axios": "0.14.0",
     "@types/body-parser": "1.17.0",
     "@types/cors": "2.8.4",
     "@types/dotenv": "6.1.0",
