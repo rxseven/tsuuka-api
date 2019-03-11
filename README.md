@@ -1,6 +1,6 @@
 # Tsūka API
 
-[![Latest Release](https://img.shields.io/badge/latest-0.1.0-lightgrey.svg?style=flat 'Latest Release')](https://github.com/rxseven/tsuuka-api/releases/tag/v0.1.0) [![Build Status](https://travis-ci.org/rxseven/tsuuka-api.svg?branch=master 'Build Status')](https://travis-ci.org/rxseven/tsuuka-api) [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/ 'CC BY-NC-ND 4.0') [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0 'AGPL v3')
+[![Latest Release](https://img.shields.io/badge/latest-0.1.1-lightgrey.svg?style=flat 'Latest Release')](https://github.com/rxseven/tsuuka-api/releases/tag/v0.1.1) [![Build Status](https://travis-ci.org/rxseven/tsuuka-api.svg?branch=master 'Build Status')](https://travis-ci.org/rxseven/tsuuka-api) [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/ 'CC BY-NC-ND 4.0') [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0 'AGPL v3')
 
 **Tsūka API is an extremely simple REST API for converting currencies.** It was built from scratch using Node, Express, and TypeScript.
 
@@ -170,9 +170,7 @@ yarn start
 
 ## Features
 
-- Fetch images
-- Upload images
-- Delete images
+Convert currencies using daily Fixer's Forex rates.
 
 [Back to top](#table-of-contents)
 
@@ -219,7 +217,9 @@ yarn start
 
 ## Related Projects
 
-**[Tsūka](https://github.com/rxseven/tsuuka)** - a simple React app for converting currencies.
+**[Tsūka](https://github.com/rxseven/tsuuka)**
+
+An extremely simple React app for converting currencies.
 
 [Back to top](#table-of-contents)
 
