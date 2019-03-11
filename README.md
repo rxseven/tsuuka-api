@@ -2,7 +2,7 @@
 
 [![Latest Release](https://img.shields.io/badge/latest-0.1.0-lightgrey.svg?style=flat 'Latest Release')](https://github.com/rxseven/tsuuka-api/releases/tag/v0.1.0) [![Build Status](https://travis-ci.org/rxseven/tsuuka-api.svg?branch=master 'Build Status')](https://travis-ci.org/rxseven/tsuuka-api) [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/ 'CC BY-NC-ND 4.0') [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0 'AGPL v3')
 
-**Tsūka API is a simple REST API for converting currencies.** It was built from scratch using Node, Express, and TypeScript.
+**Tsūka API is an extremely simple REST API for converting currencies.** It was built from scratch using Node, Express, and TypeScript.
 
 > Tsūka or 通貨 literally means “Currency” in Japanese and 通貨換算ツール (tsūka kansan tsūru) means “Currency Convertion Tool” or “Currency Converter”.
 
