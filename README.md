@@ -217,7 +217,9 @@ Convert currencies using daily Fixer's Forex rates.
 
 ## Related Projects
 
-**[Tsūka](https://github.com/rxseven/tsuuka)** - a simple React app for converting currencies.
+**[Tsūka](https://github.com/rxseven/tsuuka)**
+
+An extremely simple React app for converting currencies.
 
 [Back to top](#table-of-contents)
 
