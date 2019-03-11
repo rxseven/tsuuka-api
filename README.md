@@ -242,7 +242,7 @@ Tsūka API is an open-source project built and maintained by [Theerawat Pongsupa
 
 ## Credits
 
-Tsūka API was bootstrapped with [TypeScript Node Starter](https://github.com/Microsoft/TypeScript-Node-Starter) - a starter template for TypeScript and Node.
+This project was bootstrapped with [Gyararī API](https://github.com/rxseven/gyararii-api).
 
 ## Licenses
 
