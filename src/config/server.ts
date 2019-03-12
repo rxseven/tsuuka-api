@@ -9,10 +9,15 @@ const FIXER_API_URL = 'http://data.fixer.io/api/latest';
 const RESTCOUNTRIES_API_URL = 'https://restcountries.eu/rest/v2';
 
 // Client origin
+const whitelist = {
+  development: ['http://localhost:3000'],
+  production: ['https://tsuuka.herokuapp.com']
+};
+
 const CLIENT_ORIGIN =
   process.env.NODE_ENV === 'production'
-    ? 'https://tsuuka.herokuapp.com'
-    : `http://localhost:3000`;
+    ? whitelist.production
+    : whitelist.development;
 
 export {
   API_VERSION,
