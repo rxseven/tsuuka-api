@@ -4,7 +4,7 @@
 
 **Tsūka API is an extremely simple REST API for converting currencies.** It was built from scratch using Node, Express, and TypeScript.
 
-> Tsūka or 通貨 literally means “Currency” in Japanese and 通貨換算ツール (tsūka kansan tsūru) means “Currency Convertion Tool” or “Currency Converter”.
+> Tsūka (Romaji) or 通貨 (Kanji) literally means “Currency” in Japanese and 通貨換算ツール (tsūka kansan tsūru) means “Currency Convertion Tool” or “Currency Converter”.
 
 ## Table of Contents
 
