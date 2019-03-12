@@ -20,7 +20,7 @@ const whitelist = {
     'http://127.0.0.1:8080',
     'http://127.0.0.1:8081'
   ],
-  production: ['https://tsuuka.herokuapp.com']
+  production: ['https://tsuuka.herokuapp.com', 'https://tsuuka.netlify.com']
 };
 
 const CLIENT_ORIGIN =
